@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:text="Today"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/chat_left_msg_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_margin="10dp"
+            android:visibility="visible">
+
+
+
+            <TextView
+                android:id="@+id/chat_left_msg_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/chat_item_left"
+                android:textColor="@color/white"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="hi" />
+
+            <TextView
+                android:id="@+id/tv_time_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chat_left_msg_text_view"
+                android:maxLines="1"
+                android:text="5 min ago" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/chat_right_msg_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/_5sdp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/chat_right_msg_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_item_right"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:layout_alignParentRight="true"
+                android:paddingVertical="@dimen/_8sdp"
+                android:text="Hello" />
+
+
+
+            <TextView
+                android:id="@+id/tv_time_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chat_right_msg_text_view"
+                android:maxLines="1"
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                android:text="1 min ago" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

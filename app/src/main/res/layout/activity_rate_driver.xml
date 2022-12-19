@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/ivTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_15sdp"
+                android:fontFamily="@font/balootamma2_semibold"
+                android:text="@string/rating_note"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivPic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/ivTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/user_default"
+                app:civ_border_color="@color/gray"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivPic"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/balootamma2_regular"
+                android:text="Olivia Paker"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:id="@+id/ivNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/balootamma2_semibold"
+                android:padding="10dp"
+                android:text="@string/rating_note"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivNote"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:progressTint="@color/quantum_yellow"
+                android:rating="1"
+                android:stepSize="1" />
+
+
+            <EditText
+                android:id="@+id/edFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/ratingBar"
+                android:layout_margin="@dimen/_25sdp"
+                android:background="@drawable/ed_white_gray_bg"
+                android:fontFamily="@font/balootamma2_regular"
+                android:gravity="center_vertical|top"
+                android:hint="@string/write_your_review"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnSubmit1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/edFeedback"
+                android:layout_centerInParent="true"
+                android:layout_margin="30dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/yellow">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="25dp"
+                        android:fontFamily="@font/balootamma2_semibold"
+                        android:text="@string/submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>

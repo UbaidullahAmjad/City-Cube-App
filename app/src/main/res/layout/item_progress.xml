@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_2sdp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        >
+    <TextView
+        android:id="@+id/tvItemId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#5432"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/_13sdp"
+        android:fontFamily="@font/balootamma2_regular"
+        />
+
+    <TextView
+        android:id="@+id/tvTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To : John Doe"
+        android:fontFamily="@font/balootamma2_semibold"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_below="@+id/tvItemId"
+        />
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status : "
+            android:fontFamily="@font/balootamma2_semibold"
+            android:textSize="@dimen/_14sdp"
+            android:layout_below="@+id/tvTo"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/tvDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scheduled pickup"
+            android:layout_toRightOf="@id/tvStatus"
+            android:fontFamily="@font/balootamma2_semibold"
+            android:textSize="@dimen/_14sdp"
+            android:layout_below="@+id/tvTo"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:textColor="@color/black"
+            />
+
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/next2"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</layout>

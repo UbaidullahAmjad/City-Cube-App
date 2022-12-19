@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "192300080922",
+    "firebase_url": "https://cubecity-1757c-default-rtdb.firebaseio.com",
+    "project_id": "cubecity-1757c",
+    "storage_bucket": "cubecity-1757c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192300080922:android:3d2b5c7383c21998ed56a3",
+        "android_client_info": {
+          "package_name": "com.citycube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192300080922-qhmrkmc556rb494pfrn7in3j50b49d79.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.citycube",
+            "certificate_hash": "4a54a0201b383cca1b8c056aecfb715e2f24fe05"
+          }
+        },
+        {
+          "client_id": "192300080922-vrflosnrc9tt4dnqf6h6m0sg014fc46j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.citycube",
+            "certificate_hash": "ba37d669452cddbc97677e37ff32eda8da4790f5"
+          }
+        },
+        {
+          "client_id": "192300080922-0eifrsn40q8r1n4p6qbiv0gqrn8k44hr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8sFSvuEAsd7LRI5ySoaawu472CFqZzKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192300080922-0eifrsn40q8r1n4p6qbiv0gqrn8k44hr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192300080922:android:f853f25fc0c847d4ed56a3",
+        "android_client_info": {
+          "package_name": "com.citycubeprovider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192300080922-18vqp97bviq28klbb9m0d9b4nqm3gupl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.citycubeprovider",
+            "certificate_hash": "4a54a0201b383cca1b8c056aecfb715e2f24fe05"
+          }
+        },
+        {
+          "client_id": "192300080922-7q74pvg04i3upil5v91itg3ofh06dpri.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.citycubeprovider",
+            "certificate_hash": "ba37d669452cddbc97677e37ff32eda8da4790f5"
+          }
+        },
+        {
+          "client_id": "192300080922-0eifrsn40q8r1n4p6qbiv0gqrn8k44hr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8sFSvuEAsd7LRI5ySoaawu472CFqZzKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192300080922-0eifrsn40q8r1n4p6qbiv0gqrn8k44hr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

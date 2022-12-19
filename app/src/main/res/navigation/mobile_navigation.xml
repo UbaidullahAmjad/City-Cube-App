@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.citycube.activities.HomeActivity"
+        android:label="HomeActivity" />
+
+    <fragment
+        android:id="@+id/addVehicleFragment"
+        android:name="com.citycube.fragments.AddVehicleFragment"
+        android:label="fragment_add_vehicle"
+        tools:layout="@layout/fragment_add_vehicle" />
+
+</navigation>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WelcomeActivity"
+    android:padding="@dimen/_20sdp"
+    android:background="@drawable/welcome_bg"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:src="@drawable/cloud"
+        />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_110sdp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layoutBars"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_above="@+id/next"
+        android:orientation="horizontal"></LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/following"
+        android:onClick="next"
+        android:textSize="@dimen/_16sdp"
+        android:gravity="start|center_vertical"
+        android:background="@drawable/yellow_circular_bg"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:paddingVertical="@dimen/_12sdp"
+        android:drawableRight="@mipmap/ic_right"
+        android:fontFamily="@font/balootamma2_semibold"
+        android:paddingHorizontal="@dimen/_25sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

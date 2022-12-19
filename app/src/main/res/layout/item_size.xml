@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout     xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvItem"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_170sdp"
+        android:layout_margin="@dimen/_8sdp"
+        >
+        <RelativeLayout
+            android:id="@+id/rlHandler"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_10sdp"
+            >
+            <LinearLayout
+                android:id="@+id/header_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_10sdp"
+                >
+                <TextView
+                    android:id="@+id/tvHandlerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/baloo_bold"
+                    android:gravity="center"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+                <TextView
+                    android:id="@+id/tvHandlerType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    />
+            </LinearLayout>
+
+
+
+
+            <ImageView
+                android:layout_below="@+id/header_title"
+                android:id="@+id/ivService"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:src="@drawable/handlers"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</layout>

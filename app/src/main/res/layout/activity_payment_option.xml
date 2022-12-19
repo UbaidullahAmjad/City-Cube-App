@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical"
+        tools:context=".activities.PaymentOptionActivity">
+
+        <include
+            android:id="@+id/reservation_toolbar"
+            layout="@layout/toolbar" />
+
+
+   <!--     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/ivVisa"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/visa" />
+
+                <ImageView
+                    android:id="@+id/ivMasterCard"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_toRightOf="@id/ivVisa"
+                    android:src="@drawable/mastercard" />
+
+                <ImageView
+                    android:id="@+id/icCb"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_toRightOf="@id/ivMasterCard"
+                    android:src="@drawable/cb" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_discount"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/ivMoney"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/money_icon" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_toRightOf="@id/ivMoney"
+                    android:fontFamily="@font/balootamma2_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/pay_on_visit"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+                <CheckBox
+                    android:id="@+id/ckMoney"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:background="@drawable/checkbox_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:padding="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:padding="@dimen/_5sdp"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/ivVehicle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/small_unselected"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/tvVehicle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Small : 20M3"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/balootamma2_semibold"
+                    android:textSize="@dimen/_13sdp"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".7"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_departure"
+                        android:layout_gravity="center_vertical"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tvDeparture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Keshav Savita gdgdgdgdgdgdgdgdgdgdgdgdgdgggdgd"
+                        android:fontFamily="@font/balootamma2_regular"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:lineSpacingExtra="-5dp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textColor="@color/black"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_arrieval"
+                        android:layout_gravity="center_vertical"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tvArrival"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Keshav Savita"
+                        android:fontFamily="@font/balootamma2_regular"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:lineSpacingExtra="-5dp"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textColor="@color/black"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_blue_calander"
+                        android:layout_gravity="center_vertical"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Keshav Savita"
+                        android:fontFamily="@font/balootamma2_regular"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textColor="@color/black"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_blue_time"
+                        android:layout_gravity="center_vertical"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Keshav Savita"
+                        android:fontFamily="@font/balootamma2_regular"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textColor="@color/black"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+                    <TextView
+                        android:id="@+id/tvMinutes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Keshav Savita"
+                        android:fontFamily="@font/balootamma2_regular"
+                        android:textSize="@dimen/_12sdp"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textColor="@color/black"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/balootamma2_semibold"
+            android:gravity="center_vertical"
+            android:text="@string/bill_details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@+id/tvUnlockAcc"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/rlUnlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/tvUnlockAcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:fontFamily="@font/balootamma2_semibold"
+                android:text="@string/delivery_charge"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/balootamma2_semibold"
+                android:text="400 GS"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/tvUnlockAcc"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/gray" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/tvPackageCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:fontFamily="@font/balootamma2_semibold"
+                android:text="@string/package_cost"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/balootamma2_semibold"
+                android:text="400 GS"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/tvPackageCost"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/gray" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_10sdp">
+
+
+            <TextView
+                android:id="@+id/tvToPay"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginVertical="@dimen/_8sdp"
+                android:fontFamily="@font/balootamma2_semibold"
+                android:text="@string/total_price"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/tvTotal1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/balootamma2_semibold"
+                android:text="400 GS"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@+id/tvToPay"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@color/gray" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:fontFamily="@font/balootamma2_semibold"
+            android:gravity="center_vertical"
+            android:text="@string/payment_option"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+
+        <RadioGroup
+            android:id="@+id/rdGrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:id="@+id/rdCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_on_card"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:checked="true"
+                android:fontFamily="@font/balootamma2_regular"/>
+
+
+            <RadioButton
+                android:id="@+id/rdCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay_on_visit"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/balootamma2_regular"/>
+
+
+
+        </RadioGroup>
+
+
+
+        <RelativeLayout
+            android:id="@+id/btnPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/blue_circular_bg"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:paddingVertical="@dimen/_15sdp">
+
+            <TextView
+                android:id="@+id/tvPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/balootamma2_semibold"
+                android:text="@string/book_now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_white_right" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</layout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MyProfileActivity"
+    android:orientation="vertical"
+    android:background="@color/bg_color"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="@dimen/_10sdp"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/back"
+            />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_profile"
+            android:fontFamily="@font/baloo_bold"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_14sdp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/_10sdp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_27sdp"
+                android:src="@drawable/notification"
+                />
+            <TextView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:text="3"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:background="@drawable/badge_item"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivHome"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_gravity="end"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_60sdp"
+            android:id="@+id/ivProfile"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/ic_profile"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olivia Parker"
+            android:fontFamily="@font/baloo_bold"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_16sdp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/ivProfile"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="oliviaparker@gmail.com"
+            android:fontFamily="@font/balootamma2_medium"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/ivProfile"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_below="@+id/tvName"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_out"
+        android:textColor="@color/orange"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/balootamma2_regular"
+        android:visibility="gone"
+        />
+<LinearLayout
+    android:id="@+id/layoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_15sdp"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/general"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/balootamma2_regular"
+        android:textSize="@dimen/_16sdp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rlFeedbackRegarding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/white_bg_5"
+        android:layout_marginTop="@dimen/_8sdp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/balootamma2_regular"
+            android:text="Feedback Regarding app"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp" />
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/completed_next"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:background="@drawable/white_bg_5"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/balootamma2_regular"
+            />
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/completed_next"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlOrderHistory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    android:background="@drawable/white_bg_5"
+    android:layout_marginTop="@dimen/_10sdp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order History"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        android:fontFamily="@font/balootamma2_regular"
+        />
+    <ImageView
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:src="@drawable/completed_next"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notification"
+        android:textColor="@color/black"
+        android:fontFamily="@font/balootamma2_regular"
+        android:textSize="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allow push notification"
+            android:textColor="@color/black"
+            android:fontFamily="@font/balootamma2_regular"
+            android:textSize="@dimen/_16sdp"
+            android:layout_centerVertical="true"
+            />
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:theme="@style/SwitchCompatStyle"
+            />
+    </RelativeLayout>
+</LinearLayout>
+
+</LinearLayout>
+</layout>
